@@ -52,6 +52,8 @@ class _SearchBarAppState extends State<SearchBarApp> {
 
   void updateSearchQuery(value) {
     _searchController.text = value;
+    searchBarHasFocus.requestFocus();
+    search(value);
   }
   
 
